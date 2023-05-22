@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  tg-bot:
+    build: 
+      context: .
+      dockerfile: tg_bot.Dockerfile
+    environment:
+      TOKEN_BOT: ${TOKEN_BOT}
